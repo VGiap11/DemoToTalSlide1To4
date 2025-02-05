@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using DemoToTalSlide1To4.Models.ViewModel;
 
 namespace DemoToTalSlide1To4.Data
 {
@@ -16,5 +17,6 @@ namespace DemoToTalSlide1To4.Data
         {
             base.OnModelCreating(builder);
         }
+        public DbSet<DemoToTalSlide1To4.Models.ViewModel.EditUserViewModel> EditUserViewModel { get; set; } = default!;
     }
 }
